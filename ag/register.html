@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/logo.jpeg">
+    <title>Register Form</title>
+    
+    <style>
+         body{
+            background-image: url("images/w.jpg");
+            height: 600px;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .register-box{
+            width:500px;
+            height: auto;
+            text-align: center;
+            background-color: rgb(250, 245, 245);
+            margin: 5px 0 0  400px;
+            padding: 20px;
+            opacity: 0.7;
+            border-radius: 4%;
+        }
+        h1,h3{
+            color: #222;
+            margin-bottom: 10px;
+        }
+        hr{
+            width: 28%;
+            justify-content: center;
+        }
+        .data input{
+            width:80%;
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border:1px solid rgb(18, 173, 46);
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            color: black;
+        }
+        .gender{
+            padding-top: 20px;
+            padding-bottom: 10px;
+            font-size: 20px;
+            font-weight: 400;
+        }
+       .gender input{
+        width: auto;
+        margin-left: 25px;  
+       }
+        .data-add input{
+            width:80%;
+            height: 40px;
+            margin-top: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border:1px solid rgb(18, 173, 46);
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            color: black;
+         }  
+        button{
+            width:50%;
+            height: 40px;
+            padding: 5px ;
+            margin-top: 15px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 30px;
+           background-color: chartreuse;
+            cursor: pointer;
+        }
+        button:hover{
+            transform: scale(1.2);
+            font-weight: 500;
+        }
+       </style>
+</head>
+<body>
+    <div class="register-box">
+        <h1>Registration Form</h1><hr>
+        <h3>Start by entering your information to create your account!</h3>
+        <form action="login.html" method="post">
+            <div class="data">
+            <input type="text" name="usersname" id="rname"placeholder="Enter Your Name" required><br>
+            <input type="email" name="email" id="remail" placeholder="Enter Your email" required><br>
+            <input type="password" name="password" id="rpass" placeholder="Enter Your Password" required>
+            <input type="password" name="compassword" placeholder="Confrim Your Password" required>
+        </div> 
+            <div class="gender">
+            <input type="radio" name="gender" value="male" required> <span>Male</span>
+            <input type="radio" name="gender" value="male" required><span>Female</span>
+            <input type="radio" name="gender" value="male" required><span>Others</span>
+        </div>
+        <div class="data-add">
+            <input type="tel" name="phone" required placeholder="Enter Your Phone_Number">
+            <input type="text" name="add" required placeholder="Enter Your Address">
+        </div>
+            <button type="submit" onclick="addData()">Register</button>
+       
+        </form>      
+    </div>
+    <script>
+        function addData(){
+            var email=document.getElementById("remail").value;
+            var pass=document.getElementById("rpass").value;
+
+            localStorage.setItem("useremail",email);
+            localStorage.setItem("userpassword",pass);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/logo.jpeg">
+    <link rel="stylesheet" href="payout.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+
+    <title>Payout Page in Admin View</title>
+<style>
+
+</style>
+</head>
+<body>
+  <section id="sidebar">
+    <div class="sidebar-brand">
+      <h2> <img src="images/logo.jpeg" alt=""></h2> 
+    </div><hr style="width: 80%;margin-left: 10%;">
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a href="dashboard.html"><i class="fa fa-desktop"></i><span>Dashboard</span></a>
+        </li>
+        <li>
+          <a href="farmers.html"><i class="fa fa-users"></i><span>Farmers</span></a>
+        </li>
+        <li>
+          <a href="customeracc.html"><i class="fa fa-users"></i><span>Customers</span></a>
+        </li>
+        
+        <li>
+          <a href="adproduct.html"><i class="fa fa-file"></i><span>Products</span></a>
+        </li>
+        <li>
+          <a href="productorder.html"><i class="fa fa-server"></i><span>Orders</span></a>
+        </li>
+       
+        <li>
+          <a href="income.html"><i class="fa fa-credit-card"></i><span>Income</span></a>
+        </li>
+        <li>
+          <a href="payout.html"><i class="fa fa-credit-card"></i><span>Payment</span></a>
+        </li>
+        <li>
+          <a href="message.html"><i class="fa-solid fa-envelope"></i><span>Messages</span></a>
+        </li>
+       
+        <li>
+          <a href="#"><i class="fa-solid fa-bullhorn"></i><span>News</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-cart-flatbed"></i><span>Advertisement</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-user"></i><span>Account</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-gear"></i><span>Setting</span></a>
+        </li>
+        <li>
+          <a href="Home.html" onclick=Myalert()><i class="fa fa-arrow-circle-right"></i><span>Logout</span></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+      <section id="main-content">
+        <header class="main-header">
+          <div class="header-left">
+            <h2 class="toggle-btn">Dashboard</h2>
+          </div>
+          <div class="header-left search-div">
+            <input class="search-bar" type="search" placeholder="Search here.." />
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="header-left">
+            <img src="images/pr1.webp" alt="Admin" class="img-responsive" />
+            <h3>Min Khant Kyaw</h3>
+            <p>Admin</p>
+
+          </div> 
+        </header>
+        <div class="paycontainer">
+          <div class="add">
+            <h2> Recently Payment Lists</h2>
+            <button id="myBtn">Add Payment&nbsp;<i class="fa-solid fa-circle-plus"></i></button>
+          </div> 
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close"><i class="fa-solid fa-xmark"></i></span>
+    <div class="pay-form">
+      <h2>Payment Form For Admin</h2>
+   <form action="" method="post">
+      <label for="pid">Payment ID</label><br>
+    <input type="number" name="pid" id=""><br>
+    <label for="receiver">Receiver</label><br>
+    <input type="text" name="receiver" id=""><br>
+    <label for="method" name="method">Payment Methods</label><br>
+    <div class="method">
+    <input type="radio" name="method" id=""><span>KBZPay</span>
+    <input type="radio" name="method" id=""><span>WavePay</span>
+    <input type="radio" name="method" id=""><span>OK$</span>
+    <input type="radio" name="method" id=""><span>KBZ Credit card</span>
+  </div>
+    <label for="tid">Transition ID</label><br>
+    <input type="number" name="tid" id=""><br>
+    <label for="date">Date</label><br>
+    <input type="date" name="date" id=""><br>
+    <label for="amount">Amount</label><br>
+    <input type="number" name="amount" id=""><br>
+   <button type="submit" value="submit">Transfer</button>
+  </form>
+  </div>
+ </div>
+</div>
+  <table>
+                <tr>
+                    <th>Payment-ID</th>
+                    <th>Receiver</th>
+                    <th>Transition-ID</th>
+                    <th>Payment Method</th>
+                    <th>Amount</th>
+                    <th> Date</th>
+                    <th>Status</th>
+                  </tr>
+                  
+                <tr>
+                    <td>000145</td>
+                    <td>U Tun Tun</td>
+                    <td>123 5647 256</td>
+                    <td>WavePay</td>
+                    <td>80,000</td>
+                    <td>7.8.2023</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>000144</td>
+                    <td>U Moe Myint</td>
+                    <td>123 4865 2216</td>
+                    <td>KBZPay</td>
+                    <td>85,000</td>
+                    <td>7.8.2023</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>000143</td>
+                    <td>U Thu Taw</td>
+                    <td>123 3465 256</td>
+                    <td>OK$</td>
+                    <td>85,000</td>
+                    <td>6.8.2023</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>000142</td>
+                    <td>U Aung Kyaw</td>
+                    <td>123 4825 256</td>
+                    <td>KBZPay</td>
+                    <td>85,000</td>
+                    <td>6.8.2023</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>000141</td>
+                    <td>U Aung</td>
+                    <td>123 4675 256</td>
+                    <td>OK$</td>
+                    <td>85,000</td>
+                    <td>6.8.2023</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>000140</td>
+                    <td>U Kyaw Moe</td>
+                    <td>123 46545 256</td>
+                    <td>WavePay</td>
+                    <td>25,000</td>
+                    <td>5.8.2023</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>000139</td>
+                    <td>U Bo Thun</td>
+                    <td>148 4865 256</td>
+                    <td>KBZPay</td>
+                    <td>115,000</td>
+                    <td>4.8.2023</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>000138</td>
+                    <td>U Aung Myint</td>
+                    <td>123 4865 211</td>
+                    <td>WavePay</td>
+                    <td>50,000</td>
+                    <td>3.8.2023</td>
+                    <td>Success</td>
+                </tr>
+  </table>
+ </div>
+        <div class="next">
+            <a href="#">&laquo;&nbsp;Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">Next&nbsp;&raquo;</a>
+          </div>
+</section>
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+      <script>function Myalert(){
+        alert("are you sure to Logout ?");
+        }
+        
+      </script>
+</body>
+</html>

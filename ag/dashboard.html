@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/logo.jpeg">
+    <title>Dashboard Page</title>
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web\css\all.min.css">
+ 
+  <!-- css stylesheet -->
+  <link type="text/css" rel="stylesheet" href="dashboard.css" >
+  <title>Admin Dashboard Pages</title>
+</head>
+
+<body>
+  <section id="sidebar">
+    <div class="sidebar-brand">
+      <h2> <img src="images/logo.jpeg" alt=""></h2> 
+    </div><hr style="width: 80%;margin-left: 10%;">
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a href="dashboard.html"><i class="fa fa-desktop"></i><span>Dashboard</span></a>
+        </li>
+        <li>
+          <a href="farmers.html"><i class="fa fa-users"></i><span>Farmers</span></a>
+        </li>
+        <li>
+          <a href="customeracc.html"><i class="fa fa-users"></i><span>Customers</span></a>
+        </li>
+        
+        <li>
+          <a href="adproduct.html"><i class="fa fa-file"></i><span>Products</span></a>
+        </li>
+        <li>
+          <a href="productorder.html"><i class="fa fa-server"></i><span>Orders</span></a>
+        </li>
+       
+        <li>
+          <a href="income.html"><i class="fa fa-credit-card"></i><span>Income</span></a>
+        </li>
+        <li>
+          <a href="payout.html"><i class="fa fa-credit-card"></i><span>Payment</span></a>
+        </li>
+        <li>
+          <a href="message.html"><i class="fa-solid fa-envelope"></i><span>Messages</span></a>
+        </li>
+       
+        <li>
+          <a href="#"><i class="fa-solid fa-bullhorn"></i><span>News</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-cart-flatbed"></i><span>Advertisement</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-user"></i><span>Account</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-gear"></i><span>Setting</span></a>
+        </li>
+        <li>
+          <a href="Home.html" onclick=Myalert()><i class="fa fa-arrow-circle-right"></i><span>Logout</span></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="main-content">
+    <header class="main-header">
+      <div class="header-left">
+        <!-- <i class="fa fa-bars"></i> -->
+        <h2 class="toggle-btn">Dashboard</h2>
+      </div>
+      <div class="header-left search-div">
+        <input class="search-bar" type="search" placeholder="Search here.." />
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="header-left">
+        <img src="images/pr1.webp" alt="Admin" class="img-responsive" />
+        <h3>Min Khant Kyaw</h3>
+        <p>Admin</p>
+      </div>
+      <div class="clear"></div>
+    </header>
+    <div class="clear"></div>
+    <div class="main-content-info container">
+      <a href="customeracc.html" class="card-box">
+        <h2 class="cus-num cus-h">130</h2>
+        <p>Customers</p>
+      </a>
+      <a href="farmers.html" class="card-box">
+        <h2 class="cus-num cus-h">100</h2>
+        <p>Farmers</p>
+      </a>
+      <a href="adproduct.html" class="card-box">
+        <h2 class="cus-num cus-pro">145</h2>
+        <p>Products</p>
+      </a>
+      <a href="productorder.html" class="card-box">
+        <h2 class="cus-num cus-ord">154</h2>
+        <p>Orders</p>
+      </a>
+      <a href="income.html " class="card-box">
+        <h2 >150,875,268</h2>
+        <p>Income</p>
+      </a>
+      <div class="clear"></div>
+    </div>
+    <div class="content-pro-par container">
+      <div class="pro-table">
+        <div class="rec-pro">
+          <div class="rec-h">
+            <h2>Recent Orders</h2>
+          </div>
+          <div class="rec-btn">
+            <button id="order-seeall"><a href="productorder.html">See All</a></button>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <table style="width: 100%">
+          <tr>
+            <th>Order ID</th>
+            <th>Customer Name</th>
+            <th>Address</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            
+          </tr>
+          <tr>
+            <td>001</td>
+            <td>Mg Mg</td>
+            <td>Thazi</td>
+            <td>Tomato</td>
+            <td>10kg</td>
+          </tr>
+          <tr>
+            <td>002</td>
+            <td>U Myo Min</td>
+            <td>Taungyi</td>
+            <td>Grape</td>
+            <td>20kg</td>
+           
+          </tr>
+          <tr>
+            <td>003</td>
+            <td>Daw Mya</td>
+            <td>Nay Pyi Taw</td>
+            <td>Corn</td>
+            <td>30kg</td>
+            
+          </tr>
+          <tr>
+            <td>004</td>
+            <td>U Kyaw Min</td>
+            <td>Taungyi</td>
+            <td>Potato</td>
+            <td>15kg</td>
+            
+          </tr>
+          <tr>
+            <td>005</td>
+            <td>Daw Aye</td>
+            <td>Yangon</td>
+            <td>Pineapple</td>
+            <td>8kg</td>
+            
+          </tr>
+          <tr>
+            <td>006</td>
+            <td>Daw Hla Aye</td>
+            <td>Yangon</td>
+            <td>Onion</td>
+            <td>30kg</td>
+          </tr>
+          <tr>
+            <td>007</td>
+            <td>U Mg</td>
+            <td>Yangon</td>
+            <td>Avocado</td>
+            <td>10kg</td>
+          </tr>
+          <tr>
+            <td>008</td>
+            <td>Ko Kyaw Kyaw</td>
+            <td>Yangon</td>
+            <td>Peanut</td>
+            <td>10kg</td>
+          </tr>
+          <tr>
+            <td>009</td>
+            <td>Daw Moe</td>
+            <td>Yangon</td>
+            <td>Chilli</td>
+            <td>13kg</td>
+          </tr>
+          <tr>
+            <td>010</td>
+            <td>Daw Su Su</td>
+            <td>Yamaethin</td>
+            <td>Strawberry</td>
+            <td>18kg</td>
+           
+          </tr>
+          <tr>
+            <td>011</td>
+            <td>Ko Zaw Zaw</td>
+            <td>Thazi</td>
+            <td>Sesame</td>
+            <td>21kg</td>
+          </tr>
+           <tr>
+            <td>012</td>
+            <td>Daw Aye</td>
+            <td>Yangon</td>
+            <td>Cabbage</td>
+            <td>10kg</td>
+          </tr> 
+        </table>
+  
+      </div>
+      <div class="cus-table " >
+        <div class="rec-pro">
+          <div class="rec-h">
+            <h2>All Customers</h2>
+          </div>
+          <div class="rec-btn">
+            <button id="cus-sellall"><a href="customeracc.html">See All</a></button>
+          </div>
+          <div class="clear"></div>
+        </div>
+        <table style="width: 100%">
+          <tr>
+            <th>Profile</th>
+            <th>Name</th>
+            <th>Contact</th>
+          </tr>
+          <tr>
+            <td class="td-img">
+              <img src="images/n1.jpg" alt="Customers1" />
+            </td>
+            <td>Wai Lin Kyaw</td>
+            <td class="td-cnt-i">
+              <a href="tel:9823273648"><i class="fa fa-phone"></i></a>
+              <a href="mailto:wailin12@gmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="#"><i class="fa fa-map-marker"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-img">
+              <img src="images/pr2.webp" alt="Customers2" />
+            </td>
+            <td>Luu Min</td>
+            <td class="td-cnt-i">
+              <a href="tel:9823273649"><i class="fa fa-phone"></i></a>
+              <a href="mailto:lumin12@gmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="#"><i class="fa fa-map-marker"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-img">
+              <img src="images/pr3.webp" alt="Customers3" />
+            </td>
+            <td>Wai Phyo Paing</td>
+            <td class="td-cnt-i">
+              <a href="tel:9823273647"><i class="fa fa-phone"></i></a>
+              <a href="mailto:waipaing12@gmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="#"><i class="fa fa-map-marker"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-img">
+              <img src="images/pr4.webp" alt="Customers4" />
+            </td>
+            <td>Thu Htoo San</td>
+            <td class="td-cnt-i">
+              <a href="tel:9823273650"><i class="fa fa-phone"></i></a>
+              <a href="mailto:ahsan12@gmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="#"><i class="fa fa-map-marker"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-img">
+              <img src="images/n2.jpg" alt="Customers5" />
+            </td>
+            <td>Sitt Naing Soe</td>
+            <td class="td-cnt-i">
+              <a href="tel:9823273651"><i class="fa fa-phone"></i></a>
+              <a href="mailto:donkey12@gmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="#"><i class="fa fa-map-marker"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-img">
+              <img src="images/pr6.jpeg" alt="Customers6" />
+            </td>
+            <td>Thet Paing Phyo</td>
+            <td class="td-cnt-i">
+              <a href="tel:9823273652"><i class="fa fa-phone"></i></a>
+              <a href="mailto:thetpaing12@gmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="#"><i class="fa fa-map-marker"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-img">
+              <img src="images/s2.jpg" alt="Customers7" />
+            </td>
+            <td>Aung Thet Oo</td>
+            <td class="td-cnt-i">
+              <a href="tel:9823273653"><i class="fa fa-phone"></i></a>
+              <a href="mailto:athet12@gmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="#"><i class="fa fa-map-marker"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td class="td-img">
+              <img src="images/s3.jpg" alt="Customers8" />
+            </td>
+            <td>Min Aung</td>
+            <td class="td-cnt-i">
+              <a href="tel:9823273654"><i class="fa fa-phone"></i></a>
+              <a href="mailto:aungaung12@gmail.com">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <a href="#"><i class="fa fa-map-marker"></i></a>
+            </td>
+          </tr>
+        
+        </table>
+      </div>
+     
+      </div>
+      
+  </section>
+ <section class="next-prev">
+  <div class="next">
+    <a href="#">&laquo;&nbsp;Previous</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">Next&nbsp;&raquo;</a>
+  </div>
+ </section>
+    
+
+  <script>function Myalert(){
+    alert("are you sure to Logout ?");
+    }
+    
+  </script>
+</body>
+</html>

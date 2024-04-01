@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/logo.jpeg">
+    <title>Products History Page in Farmer Views</title>
+    <link rel="stylesheet" href="farmer.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+    <div id="arrow" onclick="topFunction()">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+    <nav class="flex-div">   
+          <div class="nav-left flex-div">
+              <div id="menu-btn" class="fas fa-bars"></div>
+              <img src="images/logo.jpeg" class="logo">  
+              <h1 class="logo-txt">AgriMerchant</h1>       
+          </div>
+          <div class="nav-middle">
+              <div class=" search-div">
+                  <input class="search-bar" type="search" placeholder="Search here.." />
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>  
+          </div>
+          <div class="nav-right flex-div">
+              <div class="user-icon">
+             <img src="images/pr3.webp" >  
+             <h3>Farmer 001</h3>
+             <!-- <p>Active</p> -->
+          </div>  
+          </div>
+    </nav>
+    <!------------------------------------------------>
+    <div class="sidebar">
+        <div class="shortcut-links">
+            <a href="farmeracc.html"><i class="fa-solid fa-house"></i><p>Home</p></a>
+            <a href="farmerproducts.html"><i class="fa fa-file"></i><p>Products</p></a>
+            <a href="history.html"><i class="fa-solid fa-clock-rotate-left"></i><p>History</p></a>
+            <a href="news.html"><i class="fa-solid fa-bullhorn"></i><p>News</p></a>
+            <a href="advertisement.html"><i class="fa-solid fa-cart-flatbed"></i><p>Advertisement</p></a>
+            
+            <a href="contact.html"><i class="fa-solid fa-message"></i><p>Contact </p></a>
+            <a href=""><i class="fa fa-user"></i><p>Account</p></a>
+            <a href="Home.html" class="logout"><i class="fa fa-arrow-circle-right"></i><p>Logout</p></a>
+            <hr>
+        </div>
+       
+    </div>
+    <section class="banner">
+        <div class="recent">
+           <div class="title">
+            <h2>Recently Post Products</h2>&nbsp;<button>See All</button>
+           </div> 
+            
+            <table>
+                <tr>
+                    <th>Product-ID</th>
+                    <th>Product Images</th>
+                    <th>Product Name</th>
+                    <th>Product Price</th>
+                    <th>Category</th>
+                    <th>Dates</th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>00016</td>
+                    <td><img src="images/f9.jpg"></td>
+                    <td>Mango</td>
+                    <td>3500 MMK</td>
+                    <td>Fruits</td>
+                    <td>7/8/2023</td>
+                    <td>Thazi</td>
+                    <td>09 123456789</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>00015</td>
+                    <td><img src="images/f2.jpg"></td>
+                    <td>Watermelon</td>
+                    <td>2600 MMK</td>
+                    <td>Fruits</td>
+                    <td>6/8/2023</td>
+                    <td>Thazi</td>
+                    <td>09 123456789</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>00014</td>
+                    <td><img src="images/v9.jpg"></td>
+                    <td>Ladyfinger</td>
+                    <td>1600 MMK</td>
+                    <td>Vegetables</td>
+                    <td>17/7/2023</td>
+                    <td>Thazi</td>  
+                    <td>09 123456789</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>00013</td>
+                    <td><img src="images/c4.2.jpg"></td>
+                    <td>Sunflower seeds</td>
+                    <td>5600 MMK</td>
+                    <td>Crops</td>
+                    <td>7/5/2023</td>
+                    <td>Thazi</td>
+                    <td>09 123456789</td>
+                    <td>Success</td>
+                </tr>
+                <tr>
+                    <td>00012</td>
+                    <td><img src="images/v7.jpg"></td>
+                    <td>Eggplant</td>
+                    <td>1600 MMK</td>
+                    <td>Vegetables</td>
+                    <td>27/4/2023</td>
+                    <td>Thazi</td>
+                    <td>09 123456789</td>
+                    <td>Fail</td>
+                </tr>
+            </table>
+            
+        </div>
+       
+        <div class="next">
+            <a href="#">&laquo;&nbsp;Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">Next&nbsp;&raquo;</a>
+          </div>
+
+          <section class="trasition">
+            <h2>Recently Receive Payment</h2>
+            <div class="payment">
+                <table>
+                    <tr>  
+                    <th>Payment_ID</th>
+                    <th>Transition-ID</th>
+                    <th>Payment Method</th>
+                    <th>Amount</th>
+                    <th>Commision</th>
+                    <th>Date</th>
+                    </tr>
+                    <tr>
+                        <td>00015</td>
+                        <td>123412436498</td>
+                        <td>KBZPay</td>
+                        <td>80,000 MMK</td>
+                        <td>4,000MMK</td>
+                        <td>6.8.2023</td>
+                    </tr>
+                    <tr>
+                        <td>00014</td>
+                        <td>123412456128</td>
+                        <td>WavePay</td>
+                        <td>70,000 MMK</td>
+                        <td>3,500MMK</td>
+                        <td>4.8.2023</td>
+                    </tr>
+                    <tr>
+                        <td>00013</td>
+                        <td>123412987456</td>
+                        <td>KBZPay</td>
+                        <td>85,000 MMK</td>
+                        <td>4,250MMK</td>
+                        <td>3.8.2023</td>
+                    </tr>
+                    <tr>
+                        <td>00012</td>
+                        <td>123411234569</td>
+                        <td>KBZPay</td>
+                        <td>80,000 MMK</td>
+                        <td>4,000MMK</td>
+                        <td>3.8.2023</td>
+                    </tr>
+                </table>
+            </div>
+          </section>
+          <div class="next">
+            <a href="#">&laquo;&nbsp;Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">Next&nbsp;&raquo;</a>
+          </div>
+        </section>
+    
+    
+<!-------------------------------------------->
+<footer class="footer">
+    <p>By submitting your products to our site, you acknowledge that you agree to our website 's<a href="about-us.html">
+      <b>  Terms of Service</b></a> and <a href="about-us.html"><b>Community Guidelines</b></a>.</p>
+    <p>Please be sure not to violate others' copyright or privacy rights.<a href="about-us.html" ><b>Learn more.....</b></a></p>
+</div>
+</footer>
+<!-------------------------------------------->
+
+<script>
+        //for above-arrow
+    let arrowbtn = document.getElementById("arrow");
+    
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || 
+        document.documentElement.scrollTop > 20) {
+        arrowbtn.style.display = "block";
+      } else {
+        arrowbtn.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.documentElement.scrollTop = 0; 
+    }
+</script>
+<script>
+    var menuIcon=document.querySelector("#menu-btn");
+    var sidebar=document.querySelector(".sidebar");
+    var container=document.querySelector(".banner");
+    let check=true;
+     menuIcon.onclick=function(){
+         sidebar.classList.toggle("small-sidebar");
+         if(check){
+            container.style.paddingLeft="10%";
+            check=false;
+         }else{
+            container.style.paddingLeft="17%";
+            check=true
+         }
+        
+
+    }
+
+    const logTag=document.getElementsByClassName("logout")[0];
+const logout= ()=>{
+  alert("Are you to logout ?");
+}
+logTag.addEventListener("click",logout);
+    </script>
+</body>
+</html>

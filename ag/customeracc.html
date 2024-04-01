@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/logo.jpeg">
+    <title>Customers Page in Admin View</title>
+    <link rel="stylesheet" href="customer.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+  <div id="arrow" onclick="topFunction()">
+    <i class="fa fa-arrow-up"></i>
+</div>
+<!------------------------>
+<section id="sidebar">
+  <div class="sidebar-brand">
+    <h2> <img src="images/logo.jpeg" alt=""></h2> 
+  </div><hr style="width: 80%;margin-left: 10%;">
+  <div class="sidebar-menu">
+    <ul>
+      <li>
+        <a href="dashboard.html"><i class="fa fa-desktop"></i><span>Dashboard</span></a>
+      </li>
+      <li>
+        <a href="farmers.html"><i class="fa fa-users"></i><span>Farmers</span></a>
+      </li>
+      <li>
+        <a href="customeracc.html"><i class="fa fa-users"></i><span>Customers</span></a>
+      </li>
+      
+      <li>
+        <a href="adproduct.html"><i class="fa fa-file"></i><span>Products</span></a>
+      </li>
+      <li>
+        <a href="productorder.html"><i class="fa fa-server"></i><span>Orders</span></a>
+      </li>
+     
+      <li>
+        <a href="income.html"><i class="fa fa-credit-card"></i><span>Income</span></a>
+      </li>
+      <li>
+        <a href="payout.html"><i class="fa fa-credit-card"></i><span>Payment</span></a>
+      </li>
+      <li>
+        <a href="message.html"><i class="fa-solid fa-envelope"></i><span>Messages</span></a>
+      </li>
+     
+      <li>
+        <a href="#"><i class="fa-solid fa-bullhorn"></i><span>News</span></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-cart-flatbed"></i><span>Advertisement</span></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-user"></i><span>Account</span></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-solid fa-gear"></i><span>Setting</span></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-arrow-circle-right"></i><span>Logout</span></a>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section id="main-content">
+      <header class="main-header">
+        <div class="header-left">
+          <h2 class="toggle-btn">Dashboard</h2>
+        </div>
+        <div class="header-left search-div">
+          <input class="search-bar" type="search" placeholder="Search here.." />
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="header-left">
+          <img src="images/pr1.webp" alt="Admin" class="img-responsive" />
+          <h3>Min Khant Kyaw</h3>
+          <p>Admin</p>
+        </div>
+        <div class="clear"></div>
+      </header>
+      <div class="clear"></div>
+      <div class="container">
+        <div class="add">
+          <h2 style="color: #fff;font-size: 2rem;">All Customers</h2>
+          <button id="myBtn">Add Customer <i class="fa-solid fa-circle-plus"></i></button>
+        </div>
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <div class="pay-form">
+              
+           <form action="" method="post">
+              <label for="fid">Customer ID</label><br>
+            <input type="number" name="fid" id=""><br>
+            <label for="name">Customer Name</label><br>
+            <input type="text" name="fname" id=""><br>
+            <label for="add">Address</label><br>
+            <input type="text" name="add" id=""><br>
+            <label for="add">Email</label><br>
+            <input type="email" name="email" id=""><br>
+            <label for="ph">Phone No:</label><br>
+            <input type="number" name="ph" id=""><br>
+            <label for="date">Joined Date</label><br>
+            <input type="date" name="date" id=""><br>
+           
+           <button type="submit" value="submit">Add To List</button>
+          </form>
+          </div>
+         </div>
+        </div>
+      <table class="table">
+
+        <tr>
+        <th>Customer-ID</th>
+        <th>Customer Name</th>
+        <th>Profile</th>
+        <th>Address</th>
+        <th>Phone No:</th>
+        <th>Email</th>
+        <th>Joined Date</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td>000130</td>
+        <td>Wai Phyo Paing</td>
+        <td><img src="images/pr2.webp" alt=""></td>
+        <td>Nay Pyi Taw</td>
+        <td>09 666777888</td>
+        <td>waiphyo@gmail.com</td>
+        <td>10-8-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000129</td>
+        <td>Thu Htoo San</td>
+        <td><img src="images/pr3.webp" alt=""></td>
+        <td>Meiktila</td>
+        <td>09 666777666</td>
+        <td>thuhtoo@gmail.com</td>
+        <td>10-8-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000128</td>
+        <td>Kyaw Zayar Min</td>
+        <td><img src="images/pr4.webp" alt=""></td>
+        <td>Thazi</td>
+        <td>09 666777887</td>
+        <td>kyawzm@gmail.com</td>
+        <td>8-8-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000127</td>
+        <td>Luu Minn</td>
+        <td><img src="images/pr6.jpeg" alt=""></td>
+        <td>Mahlaing</td>
+        <td>09 665677866</td>
+        <td>lumin@gmail.com</td>
+        <td>8-8-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000126</td>
+        <td>Wai Lin Kyaw</td>
+        <td><img src="images/n2.jpg" alt=""></td>
+        <td>Yamethin</td>
+        <td>09 666777788</td>
+        <td>wailin@gmail.com</td>
+        <td>7-8-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000125</td>
+        <td>Aung Thet Oo</td>
+        <td><img src="images/n3.jfif" alt=""></td>
+        <td>Yamethin</td>
+        <td>09 656777888</td>
+        <td>aung@gmail.com</td>
+        <td>6-8-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000124</td>
+        <td>Min Aung</td>
+        <td><img src="images/w1.jpg" alt=""></td>
+        <td>Mahlaing</td>
+        <td>09 666212808</td>
+        <td>minaung@gmail.com</td>
+        <td>6-8-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000123</td>
+        <td>Paing Oo Zay</td>
+        <td><img src="images/w2.jpg" alt=""></td>
+        <td>Nay Pyi Taw</td>
+        <td>09 666555444</td>
+        <td>paiooz@gmail.com</td>
+        <td>5-8-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000122</td>
+        <td>Phway Phway</td>
+        <td><img src="images/pr5.webp" alt=""></td>
+        <td>Yangon</td>
+        <td>09 666444888</td>
+        <td>Phway@gmail.com</td>
+        <td>4-8-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000121</td>
+        <td>Moe Hay Ko</td>
+        <td><img src="images/s3.jpg" alt=""></td>
+        <td>Yangon</td>
+        <td>09 666555488</td>
+        <td>moehayko@gmail.com</td>
+        <td>3-8-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000120</td>
+        <td>Khin Wint War</td>
+        <td><img src="images/s4.avif" alt=""></td>
+        <td>Yangon</td>
+        <td>09 77744455</td>
+        <td>khinlay@gmail.com</td>
+        <td>2-8-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      </table>
+      </div>
+      <div class="next">
+        <a href="#">&laquo;&nbsp;Previous</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">Next&nbsp;&raquo;</a>
+      </div>
+    </section>
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+      <script>
+         let arrowbtn = document.getElementById("arrow");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || 
+    document.documentElement.scrollTop > 20) {
+    arrowbtn.style.display = "block";
+  } else {
+    arrowbtn.style.display = "none";
+  }
+}
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
+}
+      </script>
+</body>
+</html>

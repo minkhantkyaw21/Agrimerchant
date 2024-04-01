@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/logo.jpeg">
+    <title>Check Out page</title>
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="checkout-layout">
+            <div class="return-cart">
+               <h3> <a href="products.html">
+                <i class="fa-solid fa-arrow-left"></i>Keep Shopping</a></h3>
+                <h1>List Product in Cart</h1>
+                <div class="list">
+                    <div class="item">
+                        <img src="images/f1.jpg" alt="">
+                         <div class="name">Strawberries</div>
+                        <div class="price">1600 MMK</div>
+                        <div class="quantity">10 kg</div>
+                        <div class="returnprice">16000 MMK</div> 
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <img src="images/f8.jpg" alt="">
+                         <div class="name">Strawberries</div>
+                        <div class="price">1600 MMK</div>
+                        <div class="quantity">10 kg</div>
+                        <div class="returnprice">16000 MMK</div> 
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="item">
+                        <img src="images/v1.jpg" alt="">
+                         <div class="name">Strawberries</div>
+                        <div class="price">1600 MMK</div>
+                        <div class="quantity">10 kg</div>
+                        <div class="returnprice">16000 MMK</div> 
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <h1>Checking Order</h1>
+                <div class="form">
+                    <div class="group">
+                        <label for="name">Name</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="group">
+                        <label for="name">Phone Number</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="group">
+                        <label for="name">Current Existing Address</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    
+                    <div class="group">
+                        <label for="name">City</label>
+                        <select name="" id="">
+                            <option value="">Choose...</option>
+                            <option value="">Mandalay</option>
+                            <option value="">Yangon</option>
+                            <option value="">Meiktila</option>
+                            <option value="">Thazi</option>
+                            <option value="">Nay Pyi Taw</option>
+                            <option value="">Myin Gyan</option>
+                            <option value="">Taungyi</option>
+                        </select>
+                    </div>
+                    <div class="group">
+                        <label for="name">State/Region</label>
+                        <select name="" id="">
+                            <option value="">Choose...</option>
+                            <option value="">Mandalay</option>
+                            <option value="">Yangon</option>
+                            <option value="">Sagaing</option>
+                            <option value="">Shan</option>
+                            <option value="">Mon</option>
+                            <option value="">Kachin</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                
+                <div class="return">
+                    <div class="row">
+                        <div>Total Quantity</div>
+                        <div class="totalQuantity">30 kg</div>
+                    </div>
+                    
+                    <div class="row">
+                        <div>Total Price</div>
+                        <div class="totalPrice">48000 MMK</div>
+                    </div>
+                </div><hr>
+                <div class="payment">
+                    <h3 for="pay">Payment Methods</h3>
+                    <div class="mobile">
+                        <h4>Mobile Banking</h4>
+                    <input type="radio" name="pay" id="" value="wave"><span>KBZpay</span>
+                    <input type="radio" name="pay" id="" value="kpay"><span>Wavepay</span>
+                    <input type="radio" name="pay" id="" value="ok"><span>OK$</span>
+                    </div>
+                    <div class="credit">
+                    
+                    <h4>Credit Card</h4>
+                    <input type="radio" name="pay" id="credit" value="card"><span>KBZ Credit Card</span>
+                    </div>
+                </div><br><br><br>
+                <div class="btn">
+                <button type="button"><a href="">Cancel</a></button>
+                <button type="submit" id="submit" onclick="check()">Order</button>
+            </div>
+            </div>
+        </div>
+    </div>
+<script>
+  function check(){
+        var ForC = document.querySelector('input[name="pay"]:checked').value;
+        if (ForC === "card") {
+                window.location.href = 'payment.html';
+            } else {
+                window.location.href = 'success.html';
+            }
+ }   
+</script>
+</body>
+</html>

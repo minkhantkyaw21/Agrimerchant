@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/logo.jpeg">
+    <title>Agriculture Products Page</title>
+    <link rel="stylesheet" href="product.css">
+    
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web\css\all.min.css">
+</head>
+<body>
+<div id="arrow" onclick="topFunction()">
+        <i class="fa fa-arrow-up"></i>
+</div>
+<!-----------------start for header-------------------->
+<header class="header">
+    <a href="#" class="logo"><img src="images/logo.jpeg">
+   <h1>AgriMerchant</h1> </a>
+    <div  class="navbar">
+       <a href="Home.html">Home</a>
+       <div class="dropdown">
+        <button class="dropbtn">Products
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#fruits">Fruits</a>
+          <a href="#vegetables">Vegetables</a>
+          <a href="#crops">Crops</a>
+        </div>
+      </div> 
+       <a href="cusadvertisement.html">Advertisement</a>
+       <a href="review.html">Review</a>
+       <a href="about-us.html">About</a>
+       <a href="contact.html">Contact</a>
+       
+    </div>    
+    
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"><span class="badge">0</span></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+    <form action="" class="search-form">
+        <input type="search" name="search" id="search-box"
+         placeholder="Search here......">
+        <label for="search-btn" class="fas fa-search" ></label>
+    </form>
+    <div class="cart">
+        <div class="cart-title">Cart Items</div>
+        <div class="cart-content">
+        
+        </div>
+        <div class="total">
+            <div class="total-title"><h3 style="color: rgb(11, 64, 11);margin-right: 5px;">Total =></h3></div>
+            <div class="total-price">MMK 0</div>
+
+          </div>
+    
+          <div class="check-order">
+            <button class="btn-buy" ><a href="checkout.html">Check Order</a></button>
+            <i class="fas fa-times" id="cart-close"></i>
+          </div>
+    </div>
+
+    <form  class="login-form"  onsubmit="login(); return false;">
+        <h3>Login Form</h3>
+        <input type="text" name="name" id="name" class="box"
+         placeholder="Enter your name">
+        <input type="email" name="email" id="Iemail" class="box"
+         placeholder="Enter your email">
+        <input type="password" name="password" id="Ipass" class="box"
+         placeholder="Enter your password">
+         <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+         </div>
+         <button type="submit" class="btn">Login</button>
+         <p>Forget password?<a href="#">click here</a></p>
+         <p>Don't have an account?<a href="register.html">create one</a></p>
+    </form>
+
+
+</header>
+    <!----------------------------->
+<main id="main">
+ <section class="best-sell">
+    <div class="title"><h1>Best Selling</h1><span><a href="#">View all>></a></span></div>
+    <div class="container">
+        <div class="container-inner">
+            <div class="pbox">
+                <div class="p-content" >
+                    <div class="newp">New</div>
+                    <img src="images/f1.jpg"  class="product-img">                       
+                    <h2 class="product-title">Strawberries</h2><span>2000 MMK</span>
+                    <p class="product-price">1600 MMK</p>
+                    <button type="button" class="p-btn view-detail" data-name="p-1">
+                        <i class="fa fa-eye"></i>View Details </button>
+                    <button type="button" class="p-btn add-cart">
+                         <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                </div> 
+            </div>
+
+            <div class="pbox" >
+                <div class="p-content">
+                    <div class="newp">New</div>
+                    <img src="images/v1.jpg" class="product-img">                       
+                    <h2 class="product-title">Tomatoes</h2><span>2000 MMK</span>
+                    <p class="product-price"> 1600 MMK</p>
+                    <button type="button" class="p-btn view-detail" data-name="p-2">
+                        <i class="fa fa-eye"></i>View Details </button>
+                    <button type="button" class="p-btn add-cart">
+                         <i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                </div>  
+            </div>
+
+            <div class="pbox">
+                <div class="p-content" >
+                    <div class="newp">New</div>
+                    <img src="images/c1.jfif" alt="" class="product-img">                        
+                    <h2  class="product-title">Corns</h2><span>3000 MMK</span>
+                    <p class="product-price">  2500 MMK</p>
+                    <button type="button" class="p-btn view-detail"  data-name="p-3">
+                        <i class="fa fa-eye"></i>View Details </button>
+                    <button type="button" class="p-btn add-cart">
+                         <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pbox" >
+                <div class="p-content">
+                    <div class="newp">New</div>
+                    <img src="images/f2.jpg" alt="" class="product-img">                      
+                    <h2  class="product-title">Melons</h2><span>1500 MMK</span>
+                    <p class="product-price"> 1000 MMK</p>
+                    <button type="button" class="p-btn view-detail" data-name="p-4">
+                        <i class="fa fa-eye"></i>View Details </button>
+                    <button type="button" class="p-btn add-cart">
+                         <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pbox" >
+                <div class="p-content">
+                    <div class="newp">New</div>
+                    <img src="images/v2.jfif" alt="" class="product-img">                        
+                    <h2  class="product-title">Onions</h2><span>2000 MMK</span>
+                    <p class="product-price"> 1400 MMK</p>
+                    <button type="button" class="p-btn view-detail" data-name="p-5">
+                        <i class="fa fa-eye"></i>View Details </button>
+                    <button type="button" class="p-btn add-cart">
+                         <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pbox" >
+                <div class="p-content">
+                    <div class="newp">New</div>
+                    <img src="images/c2.jpeg" alt="" class="product-img">                        
+                    <h2  class="product-title">Groundnets</h2><span>5500 MMK</span>
+                    <p class="product-price">5000  MMK</p>
+                    <button type="button" class="p-btn view-detail" data-name="p-6">
+                        <i class="fa fa-eye"></i>View Details </button>
+                    <button type="button" class="p-btn add-cart">
+                         <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pbox" >
+                <div class="p-content">
+                    <div class="newp">New</div>
+                    <img src="images/f3.jpg" alt="" class="product-img">                        
+                    <h2  class="product-title">Avocadoes</h2><span>2800 MMK</span>
+                    <p class="product-price"> 2000  MMK</p>
+                    <button type="button" class="p-btn view-detail" data-name="p-7">
+                        <i class="fa fa-eye"></i>View Details </button>
+                    <button type="button" class="p-btn add-cart">
+                         <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                </div>
+            </div>
+
+            <div class="pbox" >
+                <div class="p-content">
+                    <div class="newp">New</div>
+                    <img src="images/v3.jpg" alt="" class="product-img">                        
+                    <h2  class="product-title">Carrots</h2><span> 1500 MMK</span>
+                    <p class="product-price"> 800 MMK</p>
+                    <button type="button" class="p-btn view-detail" data-name="p-8">
+                        <i class="fa fa-eye"></i>View Details </button>
+                    <button type="button" class="p-btn add-cart">
+                         <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                </div>
+            </div>
+        
+        </div> 
+    <!------------------------------->
+    <div class="products-preview">
+        <div class="preview" data-target="p-1">
+            <i class="fas fa-times"></i>
+            <img src="images/f1.jpg" alt="" class="product-img">
+            <h3  class="product-title"> Strawberries</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 150 )</span>
+            </div>
+            <p>22/8/2023</p>
+            <p>Fresh strawberries from PyinOoLwin </p>
+           <div class="price">1600 MMK</div>
+         </div>
+         <div class="preview" data-target="p-2">
+            <i class="fas fa-times"></i>
+            <img src="images/v1.jpg" alt="">
+            <h3>Tomatoes</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>27/8/2023</p>
+            <p>Fresh tomatoes form Meiktila</p>
+            <div class="price">1600 MMK</div>
+         </div>
+         <div class="preview" data-target="p-3">
+            <i class="fas fa-times"></i>
+            <img src="images/c1.jfif" alt="">
+            <h3>Corns</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 50 )</span>
+            </div>
+            <p>25/8/2023</p>
+            <p>products form Thazi</p>
+            <div class="price">2500 MMK</div>
+         </div>
+        <div class="preview" data-target="p-4">
+            <i class="fas fa-times"></i>
+            <img src="images/f2.jpg" alt="">
+            <h3>Melons</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 150 )</span>
+            </div>
+            <div>24/8/2023</div>
+            <p>products from WinTwin</p>
+            <div class="price">1000 MMK</div>
+         </div>
+         <div class="preview" data-target="p-5">
+            <i class="fas fa-times"></i>
+            <img src="images/v2.jfif" alt="">
+            <h3>Onions</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 50 )</span>
+            </div>
+            <p>23/8/2023</p>
+            <p>products  from Taungyi</p>
+            <div class="price">1400 MMK</div>
+         </div>
+         <div class="preview" data-target="p-6">
+            <i class="fas fa-times"></i>
+            <img src="images/c2.jpeg" alt="">
+            <h3>Groundnets</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>23/7/2023</p>
+            <p>products from Mandalay</p>
+            <div class="price">5000 MMK</div>
+         </div>
+         <div class="preview" data-target="p-7">
+             <i class="fas fa-times"></i>
+             <img src="images/f3.jpg" alt="">
+             <h3>Avocadoes</h3>
+             <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 350 )</span>
+             </div>
+             <p>23/8/2023</p>
+             <p>prodcuts from Ayawady</p>
+             <div class="price">2000 MMK</div>
+          </div>
+          <div class="preview" data-target="p-8">
+             <i class="fas fa-times"></i>
+             <img src="images/v3.jpg" alt="">
+             <h3>Carrots</h3>
+             <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>( 180 )</span>
+             </div>
+             <p>22/8/2023</p>
+             <p>products from Mandalay</p>
+             <div class="price">800 MMK</div>
+          </div>
+      
+          <div class="preview" data-target="p-9">
+            <i class="fas fa-times"></i>
+            <img src="images/f4.jpg" alt="">
+            <h3>Apples</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+        
+         </div>
+         <div class="preview" data-target="p-10">
+            <i class="fas fa-times"></i>
+            <img src="images/f5.jpg" alt="">
+            <h3>Bananas</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+           
+         </div>
+         <div class="preview" data-target="p-11">
+            <i class="fas fa-times"></i>
+            <img src="images/f6.jpg" alt="">
+            <h3>Oranges</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+           
+         </div>
+         <div class="preview" data-target="p-12">
+            <i class="fas fa-times"></i>
+            <img src="images/f7.jpg" alt="">
+            <h3>Grapes</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+          
+         </div>
+             <div class="preview" data-target="p-13">
+                <i class="fas fa-times"></i>
+                <img src="images/f8.jpg" alt="">
+                <h3> Pineapples</h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>24/8/2023</p>
+                <p>products from Meiktila</p>
+                <div class="price">2000MMK</div>
+             </div>
+             <div class="preview" data-target="p-14">
+                <i class="fas fa-times"></i>
+                <img src="images/f9.jpg" alt="">
+                <h3> Mangoes</h3>
+                <div class="stars">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star-half-alt"></i>
+                   <span>( 250 )</span>
+                </div>
+                <p>24/8/2023</p>
+                <p>products from Meiktila</p>
+                <div class="price">2000MMK</div>
+             </div>
+          <div class="preview" data-target="p-15">
+            <i class="fas fa-times"></i>
+            <img src="images/v4.jpg" alt="">
+            <h3> Chillies</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>>
+         </div>
+         <div class="preview" data-target="p-16">
+            <i class="fas fa-times"></i>
+            <img src="images/v5.webp" alt="">
+            <h3> Cabbages</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+         </div>
+         <div class="preview" data-target="p-17">
+            <i class="fas fa-times"></i>
+            <img src="images/v6.jpg" alt="">
+            <h3> </h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+         </div>
+         <div class="preview" data-target="p-18">
+            <i class="fas fa-times"></i>
+            <img src="images/v7.jpg" alt="">
+            <h3> Eggplants</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+         </div>
+         <div class="preview" data-target="p-19">
+            <i class="fas fa-times"></i>
+            <img src="images/v8.jpg" alt="">
+            <h3> Cucumbers</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+         </div>
+         <div class="preview" data-target="p-20">
+            <i class="fas fa-times"></i>
+            <img src="images/v9.jpg" alt="">
+            <h3> Ladyfingers</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+         </div>
+         <div class="preview" data-target="p-21">
+            <i class="fas fa-times"></i>
+            <img src="images/c3.2.jpg" alt="">
+            <h3> Rices</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+         </div>
+         <div class="preview" data-target="p-22">
+            <i class="fas fa-times"></i>
+            <img src="images/c4.jpg" alt="">
+            <h3> Sunflower seeds</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+         </div>
+         <div class="preview" data-target="p-23">
+            <i class="fas fa-times"></i>
+            <img src="images/c5.jpg" alt="">
+            <h3> Coffee seeds</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+         </div>
+         <div class="preview" data-target="p-24">
+            <i class="fas fa-times"></i>
+            <img src="images/c6.jpg" alt="">
+            <h3> Pigeon seeds</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+         </div>
+         <div class="preview" data-target="p-25">
+            <i class="fas fa-times"></i>
+            <img src="images/c7.jpg" alt="">
+            <h3> Wheat seeds</h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+         </div>
+         <div class="preview" data-target="p-26">
+            <i class="fas fa-times"></i>
+            <img src="images/c8.jpg" alt="">
+            <h3>Soybeans </h3>
+            <div class="stars">
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star"></i>
+               <i class="fas fa-star-half-alt"></i>
+               <span>( 250 )</span>
+            </div>
+            <p>24/8/2023</p>
+            <p>products from Meiktila</p>
+            <div class="price">2000MMK</div>
+         </div>
+
+        </div>
+    </div>             
+</section>
+<!----------------------------------------->
+<section class="product-category"  >
+   
+<div class="category-detail">
+    <div class="fruits" id="fruits">
+            <div class="title"><h3>Fruits</h3><span><a href="#">View all>></a></span></div>
+            <div class="container">
+                <div class="container-inner">
+                    <div class="pbox">
+                        <div class="p-content" >
+                            <img src="images/f4.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Apples</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-9">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                            <img src="images/f5.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Bananas</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-10">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                            <img src="images/f6.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Oranges</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-11">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                            <img src="images/f7.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Grapes</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-12">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                            <img src="images/f8.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Pineapples</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-13">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                            <img src="images/f9.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Mangoes</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-14">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="products-preview"></div>
+                 
+             </div>
+         </div>
+    <div class="vegetables" id="vegetables">
+        <div class="title"><h3>Vegetables</h3><span><a href="#">View all>></a></span></div>
+         <div class="container">
+            <div class="container-inner">
+                <div class="pbox">
+                 <div class="p-content" >
+                           
+                    <img src="images/v4.jpg" alt="" class="product-img">                       
+                    <h2 class="product-title">Chillies</h2>
+                    <p class="product-title"> 1600 MMK</p>
+                    <button type="button" class="p-btn view-detail" data-name="p-15">
+                      <i class="fa fa-eye"></i>View Details </button>
+                    <button type="button" class="p-btn add-cart">
+                    <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+             </div> 
+             </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                           
+                            <img src="images/v5.webp" alt="" class="product-img">                       
+                            <h2 class="product-title">Cabbages</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-16">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                           
+                            <img src="images/v6.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Cow-pea</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-17">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                            <img src="images/v7.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Eggplants</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-18">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                            <img src="images/v8.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Cucumbers</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-19">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                           
+                            <img src="images/v9.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Ladyfingers</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-20">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                </div>
+                
+                
+                <div class="products-preview"> </div>         
+        </div>
+      </div>
+    <div class="crops" id="crops">
+            <div class="title"><h3>Crops</h3><span><a href="#">View all>></a></span></div>
+            <div class="container">
+                <div class="container-inner">
+                    <div class="pbox">
+                        <div class="p-content" >
+                            <img src="images/c3.2.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Rices</h2>
+                            <p class="product-title"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-21">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                           
+                            <img src="images/c4.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Sunflower seeds</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-22">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                           
+                            <img src="images/c5.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Coffee seeds</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-23">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                           
+                            <img src="images/c6.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Pigeon peas</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-24">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                           
+                            <img src="images/c7.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Wheat seeds</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-25">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                    <div class="pbox">
+                        <div class="p-content" >
+                            <img src="images/c8.jpg" alt="" class="product-img">                       
+                            <h2 class="product-title">Soybeans</h2>
+                            <p class="product-price"> 1600 MMK</p>
+                            <button type="button" class="p-btn view-detail" data-name="p-26">
+                                <i class="fa fa-eye"></i>View Details </button>
+                            <button type="button" class="p-btn add-cart">
+                                 <i class="fa fa-shopping-cart"></i>Add To Cart</button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="products-preview"> </div>
+            </div>
+        </div>
+        <div class="next">
+            <a href="#">&laquo;&nbsp;Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">Next&nbsp;&raquo;</a>
+          </div> 
+
+    </div>
+</section>
+</main>
+
+
+
+
+<!----------------------------->
+<footer >
+    <div class="box-container">
+    <div class="footer-box">
+        <h3>Agri Merchant</h3>
+        <p>Feel Free To Follow Us On Our Social Media Handlers,
+            All The Link Are Given Below.</p>
+
+            <div class="footer-share">
+                <a href="#" class="fa-brands fa-facebook"></a>
+                <a href="#" class="fa-brands fa-twitter"></a>
+                <a href="#" class="fa-brands fa-instagram"></a>
+                <a href="#" class="fa-brands fa-linkedin"></a>
+                <a href="#" class="fa-brands fa-telegram"></a>
+            </div>
+            <div class="references">
+                <h3>References by</h3>
+                <a href="https://www.google.com/" class="links"><i class="fa-brands fa-google"></i>Google.com</a>
+                <a href="https://www.youtube.com/" class="links"><i class="fa-brands fa-youtube"></i>Youtube.com</a>       
+        </div>
+
+    </div>
+    <div class="footer-box">
+        <h3>Contact Info</h3>
+            <a href="#" class="links"><i class="fa-solid fa-phone"></i>+95 9673141303</a>
+            <a href="#" class="links"><i class="fa-solid fa-phone"></i>+95 9976556297</a>
+            <a href="#" class="links"><i class="fa-solid fa-phone"></i>+95 9260880636</a>
+            <a href="#" class="links"><i class="fa-solid fa-envelope"></i>Agriculture@gmail.com</a>
+            <a href="#" class="links"><i class="fa-solid fa-location-dot"></i>Tawma,UCSMTLA,Meiktila</a>
+           
+    </div>
+    <div class="footer-box">
+        <h3>Quick Links</h3>
+        <a href="Home.html" class="links"><i class="fa-solid fa-arrow-right"></i>Home</a>
+        <a href="products.html" class="links"><i class="fa-solid fa-arrow-right"></i>Products</a>
+        <a href="cusadvertisement.html" class="links"><i class="fa-solid fa-arrow-right"></i>Advertisement</a>
+        <a href="review.html" class="links"><i class="fa-solid fa-arrow-right"></i>Reviews</a>
+        <a href="about-us.html" class="links"><i class="fa-solid fa-arrow-right"></i>About us</a>
+        <a href="contact.css" class="links"><i class="fa-solid fa-arrow-right"></i>Contact</a>
+        
+    </div>
+    <div class="footer-box">
+        <h3>New Features</h3>
+        <p>Feel For the best service , <br>Create an account</p>
+        
+        <a href="register.html"><button type="button" value="Subscribe">Create</button></a><br>
+        <div class="payment">
+       <a href="https://www.kbzpay.com" ><img src="images/kpay.png" class="png"></a>
+       <a href="https://wavemoney.com.mm/wavepay"> <img src="images/wavepay.png" class="png"></a>
+       <a href="https://www.okdollar.com/"><img src="images/ok$.png" class="png"></a>
+        <h2>Payment Methods</h2>
+    </div>
+    </div>
+    </div>
+    
+</footer>
+    <!-----------------footer section end----------------->
+   
+<script>
+/*------------------------------------*/
+let preveiwContainer = document.querySelector('.products-preview');
+let previewBox = preveiwContainer.querySelectorAll('.preview');
+
+document.querySelectorAll('.container-inner .view-detail').forEach(product =>{
+  product.onclick = () =>{
+    preveiwContainer.style.display = 'flex';
+    let name = product.getAttribute('data-name');
+    previewBox.forEach(preview =>{
+      let target = preview.getAttribute('data-target');
+      if(name == target){
+        preview.classList.add('active');
+      }
+    });
+  };
+});
+
+previewBox.forEach(close =>{
+  close.querySelector('.fa-times').onclick = () =>{
+    close.classList.remove('active');
+    preveiwContainer.style.display = 'none';
+  };
+});
+
+/*------------------------------------*/
+const btnCart=document.querySelector('.fa-shopping-cart');
+const cart=document.querySelector('.cart');
+const btnClose=document.querySelector('#cart-close');
+
+btnCart.addEventListener('click',()=>{
+  cart.classList.add('active');
+  loginForm.classList.remove('active');
+  searchForm.classList.remove('active');
+  navbar.classList.remove('active');
+});
+
+btnClose.addEventListener('click',()=>{
+  cart.classList.remove('active');
+});
+/*---------------------*/
+document.addEventListener('DOMContentLoaded',LoadProduct);
+
+function LoadProduct(){
+  loadContent();
+}
+function loadContent(){
+  //Remove Product Items  From Cart
+  let btnRemove=document.querySelectorAll('#cart-remove');
+  btnRemove.forEach((btn)=>{
+    btn.addEventListener('click',removeItem);
+  });
+   //Product Item Change Event
+   let qtyElements=document.querySelectorAll('.cart-quantity');
+   qtyElements.forEach((input)=>{
+     input.addEventListener('change',changeQty);
+   });
+ 
+   //Product Cart
+   
+   let cartBtns=document.querySelectorAll('.add-cart');
+   cartBtns.forEach((btn)=>{
+     btn.addEventListener('click',addCart);
+   });
+ 
+   updateTotal();
+}
+//Remove Item
+function removeItem(){
+  if(confirm('Are Your Sure to Remove')){
+    let title=this.parentElement.querySelector('.cart-product-title').innerHTML;
+    itemList=itemList.filter(el=>el.title!=title);
+    this.parentElement.remove();
+    loadContent();
+  }
+}
+
+//Change Quantity
+function changeQty(){
+  if(isNaN(this.value) || this.value<1){
+    this.value=1;
+  }
+  loadContent();
+}
+/*-----------------------------*/
+let itemList=[];
+
+// Add Cart
+function addCart(){
+  let product=this.parentElement;
+  let title=product.querySelector('.product-title').innerHTML;
+  let price=product.querySelector('.product-price').innerHTML;
+  let imgSrc=product.querySelector('.product-img').src;
+  //console.log(title,price,imgSrc);
+  
+  let newProduct={title,price,imgSrc}
+ 
+  //Check Product already Exist in Cart
+  if(itemList.find((el)=>el.title==newProduct.title)){
+   alert("Product Already added in Cart");
+   return;
+  }else{
+   itemList.push(newProduct);
+  }
+  let newProductElement= createCartProduct(title,price,imgSrc);
+let element=document.createElement('div');
+element.innerHTML=newProductElement;
+let cartBasket=document.querySelector('.cart-content');
+cartBasket.append(element);
+loadContent();
+
+}
+
+function createCartProduct(title,price,imgSrc){
+
+  return `
+  <div class="cart-box">
+  <img src="${imgSrc}" class="cart-img">
+  <div class="detail-box">
+    <div class="cart-product-title">${title}</div>
+    <div class="price-box">
+      <div class="cart-price">${price}</div>
+       <div class="cart-amt">${price}</div>
+   </div>
+    <input type="number" value="1" class="cart-quantity">
+  </div>
+  <i class="fa-solid fa-trash-can" id="cart-remove"></i>
+</div>
+  `;
+}
+
+function updateTotal()
+{
+  const cartItems=document.querySelectorAll('.cart-box');
+  const totalValue=document.querySelector('.total-price');
+
+  let total=0;
+
+  cartItems.forEach(product=>{
+    let priceElement=product.querySelector('.cart-price');
+    let price=parseInt(priceElement.innerHTML.replace("MMK  ",""));
+    let qty=product.querySelector('.cart-quantity').value;
+    total+=(price*qty);
+    product.querySelector('.cart-amt').innerText="MMK  "+(price*qty);
+
+  });
+
+  totalValue.innerHTML='MMK  '+total;
+
+
+  // Add Product Count in Cart Icon
+
+  const cartCount=document.querySelector('.badge');
+  let count=itemList.length;
+  cartCount.innerHTML=count;
+
+  if(count==0){
+    cartCount.style.display='none';
+  }else{
+    cartCount.style.display='block';
+  }
+}
+/*-----------------------------------*/
+</script>
+<script>
+       let searchForm=document.querySelector('.search-form');
+   document.querySelector('#search-btn').onclick=()=>{
+    searchForm.classList.toggle('active');
+    loginForm.classList.remove('active');
+    cart.classList.remove('active');
+    navbar.classList.remove('active');
+   }                                    
+ 
+   let loginForm=document.querySelector('.login-form');
+   document.querySelector('#login-btn').onclick=()=>{
+    loginForm.classList.toggle('active');
+    searchForm.classList.remove('active');
+    cart.classList.remove('active');
+    navbar.classList.remove('active');
+   }
+
+   let navbar=document.querySelector('.navbar');
+   document.querySelector('#menu-btn').onclick=()=>{
+    navbar.classList.toggle('active');
+    searchForm.classList.remove('active');
+    cart.classList.remove('active');
+    loginForm.classList.remove('active');
+   
+   }
+   window.onscroll = () =>{
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+    // cart.classList.remove('active');
+   }
+</script>
+<script>
+    function login(){
+    var name=document.getElementById("name").value;
+    var email=document.getElementById("Iemail").value;
+    var pass=document.getElementById("Ipass").value;
+    
+    if(name === "admin" && pass ===  "123456" && email === "admin@gmail.com"){
+
+        window.location.href='dashboard.html';
+    }else{
+        alert("Error");
+    }
+    }
+</script>
+<script>
+    let arrowbtn = document.getElementById("arrow");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || 
+    document.documentElement.scrollTop > 20) {
+    arrowbtn.style.display = "block";
+  } else {
+    arrowbtn.style.display = "none";
+  }
+}
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
+}
+</script>
+</body>
+</html>

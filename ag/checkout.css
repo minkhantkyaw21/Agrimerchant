@@ -1,0 +1,127 @@
+.checkout-layout{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    padding: 20px;
+}
+.checkout-layout .right{
+    background-color: rgb(93, 208, 31);
+    border-radius: 20px;
+    padding: 40px;
+    color: #fff;
+}
+.checkout-layout .list img{
+    height: 70px;
+}
+.checkout-layout .right .form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    border-bottom:1px solid #7a7fe2 ;
+    padding-bottom: 20px;
+}
+.checkout-layout .form .group:nth-child(-n+3){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.checkout-layout .form input,
+.checkout-layout .form select{
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #6ac9bc;
+  color: #fff;
+}
+.checkout-layout .right .group .payment{
+    width: 100%;
+
+}
+.payment input{
+    display: inline-block;
+    margin: 10px;
+}
+.payment .mobile{
+   float: left;
+   width: 50%;
+}
+.payment .credit{
+    float: right;
+}
+.checkout-layout .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.checkout-layout .row div:nth-child(2){
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 20px 10px 20px;
+}
+button{
+    width: 30%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #49d8b9;
+}
+.return-cart h1{
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+}
+.return-cart h3 a{
+    color: black;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #d2c6c6;
+    padding: 12px;
+}
+.return-cart .list .item img{
+    height: 60px;
+    width: 80px;
+    border-radius: 10%;
+    margin-right: 20px;
+}
+.return-cart .item{
+    display: flex;
+    /* grid-template-columns: 80px 1fr 50px 80px; */
+    align-items: center;
+    gap: 0px;
+    margin-bottom: 30px;
+    padding: 10px 10px;
+    box-shadow: 0 10px 20px #555;
+    border-radius: 10px;
+}
+.return-cart .item div{
+    display: flex;
+    justify-content: space-between;
+}
+.return-cart .item .name,
+.return-cart .item .price{
+    font-size: 1rem;
+    padding-right: 2rem;
+    font-weight: bold;
+}
+.return-cart .item .returnprice{
+    margin-left: 40px;
+}
+.btn a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+}

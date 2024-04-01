@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page in Admin View</title>
+    <link rel="stylesheet" href="customer.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+  <section id="sidebar">
+    <div class="sidebar-brand">
+      <h2> <img src="images/logo.jpeg" alt=""></h2> 
+    </div><hr style="width: 80%;margin-left: 10%;">
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a href="dashboard.html"><i class="fa fa-desktop"></i><span>Dashboard</span></a>
+        </li>
+        <li>
+          <a href="farmers.html"><i class="fa fa-users"></i><span>Farmers</span></a>
+        </li>
+        <li>
+          <a href="customeracc.html"><i class="fa fa-users"></i><span>Customers</span></a>
+        </li>
+        
+        <li>
+          <a href="adproduct.html"><i class="fa fa-file"></i><span>Products</span></a>
+        </li>
+        <li>
+          <a href="productorder.html"><i class="fa fa-server"></i><span>Orders</span></a>
+        </li>
+       
+        <li>
+          <a href="income.html"><i class="fa fa-credit-card"></i><span>Income</span></a>
+        </li>
+        <li>
+          <a href="payout.html"><i class="fa fa-credit-card"></i><span>Payment</span></a>
+        </li>
+        <li>
+          <a href="message.html"><i class="fa-solid fa-envelope"></i><span>Messages</span></a>
+        </li>
+       
+        <li>
+          <a href="#"><i class="fa-solid fa-bullhorn"></i><span>News</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-cart-flatbed"></i><span>Advertisement</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-user"></i><span>Account</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-gear"></i><span>Setting</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-arrow-circle-right"></i><span>Logout</span></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+      <section id="main-content">
+        <header class="main-header">
+          <div class="header-left">
+            <h2 class="toggle-btn">Dashboard</h2>
+          </div>
+          <div class="header-left search-div">
+            <input class="search-bar" type="search" placeholder="Search here.." />
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="header-left">
+            <img src="images/pr1.webp" alt="Admin" class="img-responsive" />
+            <h3>Min Khant Kyaw</h3>
+            <p>Admin</p>
+          </div> 
+        </header>
+        <div class="container">
+            <div class="add">
+              <h2 style="color:#fff;font-size: 2rem;">All Product Lists</h2>
+              <button id="myBtn">Add Product <i class="fa-solid fa-circle-plus"></i></button>
+            </div>
+    
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                <div class="pay-form">
+                  
+               <form action="" method="post">
+                  <label for="fid">Product ID</label><br>
+                <input type="number" name="fid" id=""><br>
+                <label for="name">Product Name</label><br>
+                <input type="text" name="fname" id=""><br>
+                <label for="add">Product Image</label><br>
+                <input type="file" name="img" style="border: none;"><br>
+                <label for="add">Category</label><br>
+                <input type="email" name="email" id=""><br>
+                <label for="ph">Price</label><br>
+                <input type="number" name="ph" id=""><br>
+                <label for="date">Added Date</label><br>
+                <input type="date" name="date" id=""><br>
+               
+               <button type="submit" >Add To List</button>
+              </form>
+              </div>
+             </div>
+            </div>
+          <table class="table">
+    
+            <tr>
+            <th>Product-ID</th>
+            <th>Product Name</th>
+            <th>Product Image</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Added Date</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>000145</td>
+            <td>Ladyfinger</td>
+            <td><img src="images/v9.jpg" alt=""></td>
+            <td><span class="rev-span"></span>Vegetables</td>
+            <td>1000 MMK</td>
+            <td>10-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000144</td>
+            <td>Corns</td>
+            <td><img src="images/c1.jfif" alt=""></td>
+            <td><span class="pending-span"></span>Crops</td>
+            <td>2000 MMK</td>
+            
+            <td>10-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000143</td>
+            <td>Strawberries</td>
+            <td><img src="images/f1.jpg" alt=""></td>
+            <td><span class="progress-span"></span>Fruits</td>
+            <td>4000 MMK</td>
+           
+            <td>8-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000142</td>
+            <td>Guava</td>
+            <td><img src="images/f10.jpg" alt=""></td>
+            <td><span class="progress-span"></span>Fruits</td>
+            <td>1800 MMK</td>
+            <td>8-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000141</td>
+            <td>Oranges</td>
+            <td><img src="images/f6.jpg" alt=""></td>
+            <td><span class="progress-span"></span>Fruits</td>
+            <td>3000 MMK</td>
+            
+            <td>7-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000140</td>
+            <td>Rices</td>
+            <td><img src="images/c3.2.jpg" alt=""></td>
+            <td><span class="pending-span"></span>Crops</td>
+            <td>11000 MMK</td>
+            
+            <td>6-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000139</td>
+            <td>Wheat seeds</td>
+            <td><img src="images/c7.jpg" alt=""></td>
+            <td><span class="pending-span"></span>Crops</td>
+            <td>5000 MMK</td>
+           
+            <td>6-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000138</td>
+            <td>Pineapples</td>
+            <td><img src="images/f8.jpg" alt=""></td>
+            <td><span class="progress-span"></span>Fruits</td>
+            <td>1500 MMK</td>
+           
+            <td>5-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000137</td>
+            <td>Cabbage</td>
+            <td><img src="images/v5.webp" alt=""></td>
+            <td><span class="rev-span"></span>Vegetables</td>
+            <td>800 MMK</td>
+           
+            <td>4-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000136</td>
+            <td>Brinjal</td>
+            <td><img src="images/v7.jpg" alt=""></td>
+            <td><span class="rev-span"></span>Vegetables</td>
+            <td>1600 MMK</td>
+           
+            <td>3-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000135</td>
+            <td>Tomato</td>
+            <td><img src="images/v1.jpg" alt=""></td>
+            <td><span class="rev-span"></span>Vegetables</td>
+            <td>1600 MMK</td>
+           
+            <td>2-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          </table>
+          </div>
+
+
+        <div class="next">
+            <a href="#">&laquo;&nbsp;Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">Next&nbsp;&raquo;</a>
+          </div>
+</section>
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+</body>
+</html>
+    
+</body>
+</html>

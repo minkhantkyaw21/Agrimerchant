@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/logo.jpeg">
+    <title>Farmers Page in Admin View</title>
+    <link rel="stylesheet" href="customer.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+  <div id="arrow" onclick="topFunction()">
+    <i class="fa fa-arrow-up"></i>
+</div>
+     <section id="sidebar">
+        <div class="sidebar-brand">
+          <h2> <img src="images/logo.jpeg" alt=""></h2> 
+        </div><hr style="width: 80%;margin-left: 10%;">
+        <div class="sidebar-menu">
+          <ul>
+            <li>
+              <a href="dashboard.html"><i class="fa fa-desktop"></i><span>Dashboard</span></a>
+            </li>
+            <li>
+              <a href="farmers.html"><i class="fa fa-users"></i><span>Farmers</span></a>
+            </li>
+            <li>
+              <a href="customeracc.html"><i class="fa fa-users"></i><span>Customers</span></a>
+            </li>
+            
+            <li>
+              <a href="adproduct.html"><i class="fa fa-file"></i><span>Products</span></a>
+            </li>
+            <li>
+              <a href="productorder.html"><i class="fa fa-server"></i><span>Orders</span></a>
+            </li>
+           
+            <li>
+              <a href="income.html"><i class="fa fa-credit-card"></i><span>Income</span></a>
+            </li>
+            <li>
+              <a href="payout.html"><i class="fa fa-credit-card"></i><span>Payment</span></a>
+            </li>
+            <li>
+              <a href="message.html"><i class="fa-solid fa-envelope"></i><span>Messages</span></a>
+            </li>
+           
+            <li>
+              <a href="#"><i class="fa-solid fa-bullhorn"></i><span>News</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-cart-flatbed"></i><span>Advertisement</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-user"></i><span>Account</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-gear"></i><span>Setting</span></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-arrow-circle-right"></i><span>Logout</span></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    <section id="main-content">
+      <header class="main-header">
+        <div class="header-left">
+          <h2 class="toggle-btn">Dashboard</h2>
+        </div>
+        <div class="header-left search-div">
+          <input class="search-bar" type="search" placeholder="Search here.." />
+          <i class="fa fa-search"></i>
+        </div>
+        <div class="header-left">
+          <img src="images/pr1.webp" alt="Admin" class="img-responsive" />
+          <h3>Min Khant Kyaw</h3>
+          <p>Admin</p>
+        </div>
+       
+      </header>
+     
+      <div class="container">
+        <div class="add">
+          <h2 style="color: #fff;font-size: 2rem;">All Farmers</h2>
+          <button id="myBtn">Add Farmers <i class="fa-solid fa-circle-plus"></i></button>
+        </div>
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close"><i class="fa-solid fa-xmark"></i></span>
+            <div class="pay-form">
+              
+           <form action="" method="post">
+              <label for="fid">Farmer ID</label><br>
+            <input type="number" name="fid" id=""><br>
+            <label for="name">Farmer Name</label><br>
+            <input type="text" name="fname" id=""><br>
+           
+            <label for="map">Main Product</label><br>
+            <input type="text" name="map" id=""><br>
+            <label for="add">Address</label><br>
+            <input type="text" name="add" id=""><br>
+            <label for="ph">Phone No:</label><br>
+            <input type="number" name="ph" id=""><br>
+            <label for="date">Joined Date</label><br>
+            <input type="date" name="date" id=""><br>
+           
+           <button type="submit" value="submit">Add To List</button>
+          </form>
+          </div>
+         </div>
+        </div>
+      <table class="table">
+        <caption></caption>
+        <tr>
+        <th>Farmer-ID</th>
+        <th>Farmer Name</th>
+        <th>Profile</th>
+        <th>Main Products</th>
+        <th>Address</th>
+        <th>Phone No:</th>
+        <th>Joined Date</th>
+        <th>Action</th>
+      </tr>
+      <tr>
+        <td>000100</td>
+        <td>U Aung Kyaw</td>
+        <td><img src="images/pr3.webp" alt=""></td>
+        <td>Watermelons</td>
+        <td>Thazi</td>
+        <td>09 666777888</td>
+        <td>7-6-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000099</td>
+        <td>U Tun Myint</td>
+        <td><img src="images/pr4.webp" alt=""></td>
+        <td>Cucumbers</td>
+        <td>Taungyi</td>
+        <td>09 666774452</td>
+        <td>1-6-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000098</td>
+        <td>U Tin Saung</td>
+        <td><img src="images/pr6.jpeg" alt=""></td>
+        <td>Chillies</td>
+        <td>Mahlaing</td>
+        <td>09 666555888</td>
+        <td>27-4-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000097</td>
+        <td>U Moe Swe</td>
+        <td><img src="images/n1.jpg" alt=""></td>
+        <td>Onions</td>
+        <td>Meiktila</td>
+        <td>09 666222888</td>
+        <td>7-4-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000096</td>
+        <td>U Mya Nyunt</td>
+        <td><img src="images/n2.jpg" alt=""></td>
+        <td>Rices</td>
+        <td>Pyin Ma Nar</td>
+        <td>09 442777888</td>
+        <td>27-3-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000095</td>
+        <td>U Zaw Moe</td>
+        <td><img src="images/n3.jfif" alt=""></td>
+        <td>Coffee seeds</td>
+        <td>Lar Shoe</td>
+        <td>09 666777111</td>
+        <td>17-2-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000094</td>
+        <td>U Kyaw Soe</td>
+        <td><img src="images/w1.jpg" alt=""></td>
+        <td>Sesames</td>
+        <td>Meiktila</td>
+        <td>09 666557888</td>
+        <td>2-2-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000093</td>
+        <td>U Tin Win</td>
+        <td><img src="images/w2.jpg" alt=""></td>
+        <td>Mangoes</td>
+        <td>Thazi</td>
+        <td>09 666333888</td>
+        <td>7-6-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000092</td>
+        <td>Ko Zaw Zaw Aung</td>
+        <td><img src="images/w3.jpg" alt=""></td>
+        <td>Strawberries</td>
+        <td>Pyin Oo Lwin</td>
+        <td>09 624564897</td>
+        <td>30-1-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000091</td>
+        <td>U Min Lwin</td>
+        <td><img src="images/ad8.webp" alt=""></td>
+        <td>Bananas</td>
+        <td>Popa</td>
+        <td>09 282777888</td>
+        <td>4-1-2023</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      <tr>
+        <td>000090</td>
+        <td>U Wai Lin</td>
+        <td><img src="images/ad13.webp" alt=""></td>
+        <td>Corns</td>
+        <td>Pyawbwe</td>
+        <td>09 680872888</td>
+        <td>7-12-2022</td>
+        <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+      </tr>
+      </table>
+      </div>
+      <div class="next">
+        <a href="#">&laquo;&nbsp;Previous</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">Next&nbsp;&raquo;</a>
+      </div>
+    </section>
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+        <script>
+          let arrowbtn = document.getElementById("arrow");
+ 
+ window.onscroll = function() {scrollFunction()};
+ 
+ function scrollFunction() {
+   if (document.body.scrollTop > 20 || 
+     document.documentElement.scrollTop > 20) {
+     arrowbtn.style.display = "block";
+   } else {
+     arrowbtn.style.display = "none";
+   }
+ }
+ function topFunction() {
+   document.documentElement.scrollTop = 0; 
+ }
+       </script>
+</body>
+</html>

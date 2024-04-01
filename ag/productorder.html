@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/logo.jpeg">
+    <title>Products Page in Admin view</title>
+    <link rel="stylesheet" href="customer.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+  <section id="sidebar">
+    <div class="sidebar-brand">
+      <h2> <img src="images/logo.jpeg" alt=""></h2> 
+    </div><hr style="width: 80%;margin-left: 10%;">
+    <div class="sidebar-menu">
+      <ul>
+        <li>
+          <a href="dashboard.html"><i class="fa fa-desktop"></i><span>Dashboard</span></a>
+        </li>
+        <li>
+          <a href="farmers.html"><i class="fa fa-users"></i><span>Farmers</span></a>
+        </li>
+        <li>
+          <a href="customeracc.html"><i class="fa fa-users"></i><span>Customers</span></a>
+        </li>
+        
+        <li>
+          <a href="adproduct.html"><i class="fa fa-file"></i><span>Products</span></a>
+        </li>
+        <li>
+          <a href="productorder.html"><i class="fa fa-server"></i><span>Orders</span></a>
+        </li>
+       
+        <li>
+          <a href="income.html"><i class="fa fa-credit-card"></i><span>Income</span></a>
+        </li>
+        <li>
+          <a href="payout.html"><i class="fa fa-credit-card"></i><span>Payment</span></a>
+        </li>
+        <li>
+          <a href="message.html"><i class="fa-solid fa-envelope"></i><span>Messages</span></a>
+        </li>
+       
+        <li>
+          <a href="#"><i class="fa-solid fa-bullhorn"></i><span>News</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-cart-flatbed"></i><span>Advertisement</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-user"></i><span>Account</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-gear"></i><span>Setting</span></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-arrow-circle-right"></i><span>Logout</span></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+      <section id="main-content">
+        <header class="main-header">
+          <div class="header-left">
+            <h2 class="toggle-btn">Dashboard</h2>
+          </div>
+          <div class="header-left search-div">
+            <input class="search-bar" type="search" placeholder="Search here.." />
+            <i class="fa fa-search"></i>
+          </div>
+          <div class="header-left">
+            <img src="images/pr1.webp" alt="Admin" class="img-responsive" />
+            <h3>Min Khant Kyaw</h3>
+            <p>Admin</p>
+
+          </div> 
+        </header>
+        <div class="container">
+            <div class="add">
+              <h2 style="color: #fff;font-size: 2rem;">All Order Lists</h2>
+              <button id="myBtn">Add Order <i class="fa-solid fa-circle-plus"></i></button>
+            </div>
+    
+            <div id="myModal" class="modal">
+              <div class="modal-content">
+                <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                <div class="pay-form">
+                  
+               <form action="" method="post">
+                  <label for="fid">Order ID</label><br>
+                <input type="number" name="fid" id=""><br>
+                <label for="name">Customer Name</label><br>
+                <input type="text" name="fname" id=""><br>
+                <label for="add">Address</label><br>
+                <input type="text" name="add" id=""><br>
+                <label for="add">Product Name</label><br>
+                <input type="email" name="email" id=""><br>
+                <label for="fid">Quantity</label><br>
+                <input type="number" name="fid" id=""><br>
+                <label for="ph">Phone No:</label><br>
+                <input type="number" name="ph" id=""><br>
+                <label for="date">Order Date</label><br>
+                <input type="date" name="date" id=""><br>
+               
+               <button type="submit" value="submit">Add To List</button>
+              </form>
+              </div>
+             </div>
+            </div>
+          <table class="table">
+    
+            <tr>
+            <th>Order-ID</th>
+            <th>Customer Name</th>
+            <th>Address</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Phone No:</th>
+            <th>Order Date</th>
+            <th>Action</th>
+          </tr>
+          <tr>
+            <td>000154</td>
+            <td>Wai Phyo Paing</td>
+            <td>Nay Pyi Taw</td>
+            <td>Grape</td>
+            <td>10kg</td>
+            <td>09 666777888</td>
+            <td>10-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000153</td>
+            <td>Min Aung</td>
+            <td>Mahlaing</td>
+            <td>Orange</td>
+            <td>5kg</td>
+            <td>09 666555888</td>
+            <td>10-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000152</td>
+            <td>Aung Thet Oo</td> 
+            <td>Yamethin</td>
+            <td>Tomato</td>
+            <td>10kg</td>
+            <td>09 699777888</td>
+            <td>10-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000151</td>
+            <td>Luu Minn</td>
+            <td>Mahlaing</td>
+            <td>Onion</td>
+            <td>10kg</td>
+            <td>09 665677866</td>
+
+            <td>8-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000150</td>
+            <td>Wai Lin Kyaw</td>
+          
+            <td>Yamethin</td>
+            <td>Tomato</td>
+            <td>18kg</td>
+            <td>09 666777788</td>
+           
+            <td>7-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000149</td>
+            <td>Paing Oo Zay</td>
+            
+            <td>Nay Pyi Taw</td>
+            
+            <td>Brinjal</td>
+            <td>10kg</td>
+            <td>09 656777888</td>
+            <td>6-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000148</td>
+            <td>Min Aung</td>
+            
+            <td>Mahlaing</td>
+            <td>Chillies</td>
+            <td>14kg</td>
+            <td>09 666212808</td>
+            
+            <td>6-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000147</td>
+            <td>Paing Oo Zay</td>
+            
+            <td>Nay Pyi Taw</td>
+            <td>Chillies</td>
+            <td>15kg</td>
+            <td>09 656777888</td>
+            
+            <td>5-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000146</td>
+            <td>Phway Phway</td>
+            
+            <td>Yangon</td>
+            <td>Chillies</td>
+            <td>14kg</td>
+            <td>09 666444888</td>
+           
+            <td>4-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000145</td>
+            <td>Moe Hay Ko</td>
+            
+            <td>Yangon</td>
+            <td>Carrot</td>
+            <td>14kg</td>
+            <td>09 666555488</td>
+            
+            <td>3-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          <tr>
+            <td>000144</td>
+            <td>Khin Wint War</td>
+            
+            <td>Yangon</td>
+            <td>Cucumber</td>
+            <td>14kg</td>
+            <td>09 77744455</td>
+           
+            <td>2-8-2023</td>
+            <td><i class="fa-solid fa-pen-to-square"></i>&nbsp;&nbsp;<i class="fa-solid fa-trash-can"></i></td>
+          </tr>
+          </table>
+          </div>
+
+
+        <div class="next">
+            <a href="#">&laquo;&nbsp;Previous</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">Next&nbsp;&raquo;</a>
+          </div>
+</section>
+    <script>
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("myBtn");
+      var span = document.getElementsByClassName("close")[0];
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+</body>
+</html>

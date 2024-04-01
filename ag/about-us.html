@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/logo.jpeg">
+   
+    <title>About us Page</title>
+    <link rel="stylesheet" href="about-us.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+<body>
+    <div id="arrow" onclick="topFunction()">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+    <!-----------------start for header-------------------->
+    <header class="header">
+        <a href="Home.html" class="logo"><img src="images/logo.jpeg">
+       <h1>AgriMerchant</h1> </a>
+        <div  class="navbar">
+           <a href="Home.html">Home</a>
+           <a href="products.html">Products</a>
+           <!--<a href="farmeracc.html">Farmers</a>-->
+           <a href="cusadvertisement.html">Advertisement</a>
+           <a href="review.html">Review</a>
+           <a href="about-us.html">About</a>
+           <a href="contact.html">Contact</a>
+          
+        </div>      
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+             
+        </div>
+        <form action="" class="search-form">
+            <input type="search" name="search" id="search-box"
+             placeholder="Search here......">
+            <label for="search-btn" class="fas fa-search" ></label>
+        </form>
+
+        <div class="cart">
+            <div class="cart-title">Cart Items</div>
+            <div class="cart-content">
+           
+            </div>
+            <div class="total">
+                <div class="total-title"><h3 style="color: green;margin-right: 5px;">Total =></h3></div>
+                <div class="total-price"> MMK 0</div>
+
+            </div>
+            <div class="check-order">
+              <button class="btn-buy" ><a href="checkout.html">Check Order</a></button>
+              <i class="fas fa-times" id="cart-close"></i>
+            </div>
+        </div>
+
+        <form  class="login-form"  onsubmit="login(); return false;">
+            <h3>Login Form</h3>
+            <input type="text" name="name" id="name" class="box"
+             placeholder="Enter your name">
+            <input type="email" name="email" id="Iemail" class="box"
+             placeholder="Enter your email">
+            <input type="password" name="password" id="Ipass" class="box"
+             placeholder="Enter your password">
+             <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+             </div>
+             <button type="submit" class="btn">Login</button>
+             <p>Forget password?<a href="#">click here</a></p>
+             <p>Don't have an account?<a href="register.html">create one</a></p>
+        </form>
+    
+    </header>
+
+
+
+    <section class="about">
+        <div class="heading">
+            <h1>About us</h1>
+        </div>
+        <div class="container">
+            <div class="about-container">
+                <h2>Welcome To Our Website</h2>
+                <p>				If you are looking for farm fresh fruits and vegetables, world-class breads, top-quality pulses
+                    and food grains, dairy products, then, <b>AgriMerchant</b> has got you covered.
+                    No more getting stuck in traffic jams, paying for parking, standing in long queues and carrying heavy bags- get everything you need,
+                    when you need, right at your doorstep. Right from fresh fruits and vegetables, rice and dals, spices and seasonings to packaged products-we have it all.
+                    Choose from a wide range of options in every category, exclusively handpicked to help you find the best quality available at lowest prices.
+                    Select a time slot for delivery and your order will be delivered right to your doorstep anywhere in India.
+                    Shopping online is now easy as every product on your monthly shopping list,is now available online at <b>AgriMerchant</b>.  See more....</p>
+                 
+            </div>
+            <div class="about-img">
+                <img src="images/s6.avif" alt="">
+            </div>
+        </div>
+       
+    </section>
+    <!------------------------------------->
+    <section class="team">
+        <h1>Our Team Members</h1>
+        <div class="our-team">
+            <div class="card">
+                <img src="photoes/minkhant.jpg" alt="John" style="width:100%">
+                <h2>Min Khant Kyaw</h2><br>
+                <p class="title"><b>Team Leader</b></p>
+                <p class="title">University of Computer Studies(Meiktila)</p>
+                <div style="margin: 24px 0;cursor:pointer">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+                <p><button>Contact</button></p>
+              </div>
+              <div class="card">
+                <img src="photoes/khantsithu.jpg" alt="John" style="width:100%">
+                <h2>Khant Sithu Min</h2><br>
+                <p class="title">Team Member</p>
+                <p class="title">University of Computer Studies(Meiktila)</p>
+                <div style="margin: 24px 0;cursor:pointer">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+                <p><button>Contact</button></p>
+              </div>
+              <div class="card">
+               <img src="photoes/sitnaing.jpg" alt="John" style="width:100%">
+                <h2>Sitt Naing Soe</h2><br>
+                <p class="title">Team Member</p>
+                <p class="title">University of Computer Studies(Meiktila)</p>
+                <div style="margin: 24px 0;cursor:pointer">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                    <i class="fa-brands fa-telegram"></i>
+                </div>
+                <p><button>Contact</button></p>
+              </div>
+        </div>
+    </section>
+    <!------------------------------------->
+    <section class="privacy">
+        <h1>AgriMerchat's Privacy & Policy</h1>
+        <div class="detail">
+            
+                <p><strong>Effective Date:</strong> [Date]</p>
+            
+                <p>Welcome to [Your Store Name]! This Privacy Policy outlines how we collect, use, disclose, and safeguard your personal information when you visit our website or make use of our online agriculture products store, located at [Website URL]. Please read this Privacy Policy carefully to understand our practices regarding your personal information.</p>
+            
+                <h2>1. Information We Collect</h2>
+                <p>We may collect various types of information from and about users of our website, including:</p>
+                <ul>
+                    <li>Personal Information: We may collect personal information such as your name, contact details (email address, phone number), and shipping address when you create an account or make a purchase.</li>
+                    <li>Payment Information: When making a purchase, we collect payment information, such as credit card numbers or other financial information, necessary for completing the transaction.</li>
+                    <li>Usage Information: We collect information about your interactions with our website, including your browsing patterns, pages viewed, products added to the cart, and other similar usage data.</li>
+                    <li>Device and Location Information: We may collect information about the device you use to access our website, including your IP address, browser type, and operating system. We may also collect location information if you grant us permission.</li>
+                </ul>
+            
+                <h2>2. How We Use Your Information</h2>
+                <p>We use the collected information for various purposes, including:</p>
+                <ul>
+                    <li>Providing and Improving Services: To process your orders, fulfill requests, and improve our products and services based on your preferences and feedback.</li>
+                    <li>Communication: To send you transaction-related emails, order confirmations, and updates about your purchases.</li>
+                    <li>Marketing: With your consent, we may send you promotional emails about new products, special offers, or other updates that may be of interest to you.</li>
+                    <li>Analytics: To analyze website usage patterns, understand user preferences, and improve our website's functionality and design.</li>
+                </ul>
+            
+                <!-- Rest of the privacy policy content goes here -->
+            
+                <p><strong>8. Contact Us</strong></p>
+                <p>If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us at [Contact Information].</p>
+            
+                <p>By using our website and services, you agree to the terms outlined in this Privacy Policy.</p>
+            
+        </div>
+    </section>
+    <script>
+        let arrowbtn = document.getElementById("arrow");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || 
+    document.documentElement.scrollTop > 20) {
+    arrowbtn.style.display = "block";
+  } else {
+    arrowbtn.style.display = "none";
+  }
+}
+function topFunction() {
+  document.documentElement.scrollTop = 0; 
+}
+/*---------------------------------*/
+   let searchForm=document.querySelector('.search-form');
+   document.querySelector('#search-btn').onclick=()=>{
+    searchForm.classList.toggle('active');
+    loginForm.classList.remove('active');
+    cart.classList.remove('active');
+    navbar.classList.remove('active');
+   }                                    
+ 
+   let loginForm=document.querySelector('.login-form');
+   document.querySelector('#login-btn').onclick=()=>{
+    loginForm.classList.toggle('active');
+    searchForm.classList.remove('active');
+    cart.classList.remove('active');
+    navbar.classList.remove('active');
+   }
+
+   let navbar=document.querySelector('.navbar');
+   document.querySelector('#menu-btn').onclick=()=>{
+    navbar.classList.toggle('active');
+    searchForm.classList.remove('active');
+    cart.classList.remove('active');
+    loginForm.classList.remove('active');
+   
+   }
+   window.onscroll = () =>{
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+    // cart.classList.remove('active');
+   }
+    </script>
+    <script>
+        function login(){
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("Iemail").value;
+            var pass=document.getElementById("Ipass").value;
+            
+            if(name === "admin" && pass ===  "123456" && email === "admin@gmail.com"){
+    
+                window.location.href='dashboard.html';
+            }else{
+                alert("Error");
+            }
+            }
+    </script>
+</body>
+</html>
